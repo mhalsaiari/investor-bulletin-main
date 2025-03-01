@@ -1,0 +1,33 @@
+{
+    "users": [],
+    "vhosts": [],
+    "permissions": [],
+    "exchanges": [
+        {
+            "name": "market_data_exchange",
+            "type": "topic",
+            "vhost": "/",
+            "durable": true,
+            "auto_delete": false
+        }
+    ],
+    "queues": [
+        {
+            "name": "market_data",
+            "vhost": "/",
+            "durable": true,
+            "auto_delete": false
+        }
+    ],
+    "bindings": [
+        {
+            "source": "market_data_exchange",
+            "vhost": "/",
+            "destination": "market_data",
+            "destination_type": "queue",
+            "routing_key": "market_data_key",
+            "arguments": {}
+        }
+    ],
+    "policies": []
+}

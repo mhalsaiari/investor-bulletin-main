@@ -70,7 +70,7 @@ git clone https://github.com/mhalsaiari/investor-bulletin-main.git
 Go to the project directory
 
 ```bash
-cd my-project
+cd investor-bulletin-main
 ```
 
 Move .env.example to .env
